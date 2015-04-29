@@ -1,0 +1,30 @@
+@startuml
+annotation java.lang.Override
+class java.awt.BorderLayout
+class java.awt.Color
+class java.awt.ComponentOrientation
+class java.awt.Graphics
+class java.awt.Graphics2D
+class java.awt.Rectangle
+class java.awt.event.ActionEvent
+class java.awt.event.KeyEvent
+class javax.swing.JFrame
+class javax.swing.JPanel
+class snake.Snake
+class snake.SnakeFrame
+interface java.awt.event.ActionListener
+interface java.awt.event.KeyListener
+snake.Snake ..> java.lang.Override
+snake.Snake ..> java.awt.BorderLayout
+snake.Snake ..> java.awt.Color
+snake.Snake ..> java.awt.ComponentOrientation
+snake.Snake ..> java.awt.Graphics
+snake.Snake ..> java.awt.Graphics2D
+snake.Snake ..> java.awt.Rectangle
+snake.Snake ..> java.awt.event.ActionEvent
+snake.Snake ..> java.awt.event.KeyEvent
+snake.Snake --|> javax.swing.JPanel
+snake.Snake --|> java.awt.event.ActionListener
+snake.Snake --|> java.awt.event.KeyListener
+snake.SnakeFrame ..> javax.swing.JFrame
+@enduml
